@@ -1,0 +1,8 @@
+#root {
+}
+
+main {
+  padding: var(--space-s) var(--space-base);
+  background: var(--main-bg);
+  height: 100dvh;
+}
