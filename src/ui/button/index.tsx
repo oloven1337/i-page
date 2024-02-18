@@ -1,15 +1,11 @@
-import React, { FC } from 'react';
+import { FC, ReactNode } from "react";
 
-import './button.module.css';
+import "./button.module.css";
 
 interface Props {
-  children: React.ReactNode;
+  children: ReactNode;
 }
 
 export const Button: FC<Props> = ({ children }) => {
-  return (
-    <button>
-      {children}
-    </button>
-  );
+  return <button>{children}</button>;
 };

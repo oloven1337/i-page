@@ -1,7 +1,7 @@
-import React, { FC } from 'react';
-import { NavLink } from 'react-router-dom'
+import React, { FC } from "react";
+import { NavLink } from "react-router-dom";
 
-import './link.module.css';
+import "./link.module.css";
 
 interface Props {
   children: React.ReactNode;

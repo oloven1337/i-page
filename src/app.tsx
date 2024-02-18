@@ -1,8 +1,8 @@
-import { Routes, Route } from 'react-router-dom';
+import { Routes, Route } from "react-router-dom";
 
-import { Main, Resume } from './pages';
-import { Nav } from './modules'
-import './app.css'
+import { Main, Resume } from "./pages";
+import { Nav } from "./modules";
+import "./app.css";
 
 function App() {
   return (
@@ -15,7 +15,7 @@ function App() {
         </Routes>
       </main>
     </>
-  )
+  );
 }
 
-export default App
+export default App;

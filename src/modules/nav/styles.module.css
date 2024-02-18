@@ -2,6 +2,12 @@
   display: flex;
   background-color: var(--navbar-bg);
   padding: var(--space-m) var(--space-m);
+  justify-content: space-between;
+}
+
+.container {
+  display: flex;
+  align-items: center;
 }
 
 .navItem {

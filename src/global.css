@@ -13,6 +13,9 @@
 }
 
 :root {
+  --color-toggle-light: #181818;
+  --color-toggle-dark: bisque;
+
   --vt-c-white: #ffffff;
   --vt-c-black: #181818;
 
@@ -51,16 +54,14 @@
   }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --color-background: var(--vt-c-black);
-    --button-color: white;
-    --nav-text-color: #88888c;
-    --navbar-bg: #26262e;
-    --main-bg: #1d1b22;
-      /*hover*/
-    --hover-color: #ffffff;
-  }
+[data-theme="dark"] {
+  --color-background: var(--vt-c-black);
+  --button-color: white;
+  --nav-text-color: #88888c;
+  --navbar-bg: #26262e;
+  --main-bg: #1d1b22;
+  /*hover*/
+  --hover-color: #ffffff;
 }
 
 * {
