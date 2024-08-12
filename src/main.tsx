@@ -6,10 +6,16 @@ import App from "./app.tsx";
 import "./global.css";
 import "./i18n.js";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
-  <Suspense fallback={<div>loading...</div>}>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </Suspense>
-);
+const rootElement = document.getElementById("root");
+
+if (rootElement) {
+  ReactDOM.createRoot(rootElement).render(
+    <Suspense fallback={<div>loading...</div>}>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </Suspense>
+  );
+} else {
+  console.error("Root element not found");
+}

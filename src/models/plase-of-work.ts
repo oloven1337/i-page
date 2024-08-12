@@ -5,4 +5,12 @@ export interface PlaseOfWork {
   site?: string;
   post?: string;
   responsibilities?: string[];
+  projects?: Project[];
+  technologies?: string[];
+}
+
+export interface Project {
+  name: string;
+  description: string;
+  technologies?: string[];
 }

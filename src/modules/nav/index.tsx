@@ -46,7 +46,11 @@ export const Nav = () => {
         {routes.map(({ name, to }) => (
           <Link
             key={name}
-            className={cs(styles.navItem, isCurrentPage(to))}
+            className={cs(
+              styles.navItem,
+              isCurrentPage(to),
+              name === "blog" && styles.linkIsDisabled
+            )}
             to={to}
           >
             {t(`nav.${name}`)}

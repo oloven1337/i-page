@@ -68,3 +68,8 @@
   padding: var(--space-xs) var(--space-s);
   background-color: var(--base-accent-color);
 }
+
+.linkIsDisabled {
+  opacity: 0.7;
+  pointer-events: none;
+}

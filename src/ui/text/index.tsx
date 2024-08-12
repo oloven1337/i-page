@@ -1,9 +1,10 @@
 import { FC, ReactNode } from "react";
+import cn from "classnames";
 
-import "./styles.css";
+import styles from "./styles.module.css";
 
 interface Props {
-  type: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p";
+  type: "h1" | "h2" | "h3" | "h4" | "h5" | "h6" | "p" | "span";
   children: ReactNode;
   className?: string;
 }
@@ -17,9 +18,10 @@ export const Text: FC<Props> = ({ type, children, className }) => {
     h5: "h5",
     h6: "h6",
     p: "p",
+    span: "span",
   };
 
   const Tag = tagMap[type];
 
-  return <Tag className={`text ${className}`}>{children}</Tag>;
+  return <Tag className={cn(styles.text, className)}>{children}</Tag>;
 };

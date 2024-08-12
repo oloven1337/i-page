@@ -5,13 +5,13 @@
   margin: var(--space-m) 0;
 }
 
-.timeline-wrapper {
+.timelineWrapper {
   align-items: center;
   display: flex;
   flex-direction: column;
 }
 
-.timeline-circle {
+.timelineCircle {
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -19,7 +19,7 @@
   background-color: var(--base-accent-color);
 }
 
-.timeline-line {
+.timelineLine {
   height: calc(100% - var(--circle-size));
   width: 1px;
   background-color: var(--base-accent-color);
@@ -30,9 +30,10 @@
   margin: var(--space-s) 0;
 }
 
-.company-name {
+.companyName {
   font-size: var(--font-size-l);
   margin: var(--space-s) 0;
+  margin-top: 0;
 }
 
 .description {
@@ -41,4 +42,9 @@
 
 .description div {
   margin-bottom: var(--space-xs);
+}
+
+.projectTitle {
+  color: var(--base-accent-color);
+  font-weight: 700;
 }

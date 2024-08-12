@@ -2,10 +2,13 @@
   "nav": {
     "main": "Main",
     "games": "Games",
-    "resume": "Resume"
+    "resume": "Resume",
+    "blog": "Blog"
   },
   "profile": {
     "name": "Bazarbaev Ibragim",
-    "post": "Frontend developer"
+    "post": "Frontend developer",
+    "projects": "Projects",
+    "age": "23 years old"
   }
 }

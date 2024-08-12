@@ -1,11 +1,11 @@
 import { FC } from "react";
 
-import "./styles.css";
+import styles from "./styles.module.css";
 
 interface Props {
   text: string;
 }
 
 export const Tag: FC<Props> = ({ text }) => {
-  return <div className="text">{text}</div>;
+  return <div className={styles.text}>{text}</div>;
 };
