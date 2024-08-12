@@ -3,5 +3,9 @@
     "main": "Main",
     "games": "Games",
     "resume": "Resume"
+  },
+  "profile": {
+    "name": "Bazarbaev Ibragim",
+    "post": "Frontend developer"
   }
 }

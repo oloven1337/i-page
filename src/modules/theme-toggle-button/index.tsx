@@ -1,27 +1,18 @@
-import React from "react";
+import { FC, ChangeEvent } from "react";
 import styles from "./styles.module.css";
 
-const defaultOptions = {
-  invertedIconLogic: false
-};
+interface Props {
+  isDark: boolean;
+  onChange: (e: ChangeEvent<HTMLInputElement>) => void;
+}
 
-const ReactThemeToggleButton = ({
-     isDark,
-     onChange,
-     invertedIconLogic = defaultOptions.invertedIconLogic
-                                }) => (
+export const ReactThemeToggleButton: FC<Props> = ({ isDark, onChange }) => (
   <label
     className={styles.container}
     title={isDark ? "Activate light mode" : "Activate dark mode"}
     aria-label={isDark ? "Activate light mode" : "Activate dark mode"}
   >
-    <input
-      type="checkbox"
-      defaultChecked={invertedIconLogic ? isDark : !isDark}
-      onChange={onChange}
-    />
+    <input type="checkbox" defaultChecked={!isDark} onChange={onChange} />
     <div />
   </label>
 );
-
-export default ReactThemeToggleButton;

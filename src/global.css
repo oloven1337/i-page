@@ -1,4 +1,15 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
 :root {
+  --circle-size: 24px;
   /*colors*/
   --base-text-color: white;
   --base-accent-color: #f66969;
@@ -13,9 +24,6 @@
 }
 
 :root {
-  --color-toggle-light: #181818;
-  --color-toggle-dark: bisque;
-
   --vt-c-white: #ffffff;
   --vt-c-black: #181818;
 
@@ -44,6 +52,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
+    --text-color: var(--vt-c-black);
     --color-background: var(--vt-c-white);
     --button-color: black;
     --nav-text-color: #66758a;
@@ -55,6 +64,7 @@
 }
 
 [data-theme="dark"] {
+  --text-color: var(--vt-c-white);
   --color-background: var(--vt-c-black);
   --button-color: white;
   --nav-text-color: #88888c;
@@ -76,4 +86,9 @@ body {
 
 a {
   text-decoration: none;
+}
+
+body,
+a {
+  transition: background-color 0.5s ease, color 0.5s ease;
 }

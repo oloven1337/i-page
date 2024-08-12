@@ -1,3 +1,8 @@
+:root {
+  --color-toggle-light: #181818;
+  --color-toggle-dark: bisque;
+}
+
 .container {
   cursor: pointer;
 }
@@ -37,13 +42,11 @@
   top: 50%;
   left: 50%;
   box-shadow: 0 -20px 0 var(--color-toggle-light),
-  0 20px 0 var(--color-toggle-light),
-  20px 0 0 var(--color-toggle-light),
-  -20px 0 0 var(--color-toggle-light),
-  15px 15px 0 var(--color-toggle-light),
-  -15px 15px 0 var(--color-toggle-light),
-  15px -15px 0 var(--color-toggle-light),
-  -15px -15px 0 var(--color-toggle-light);
+    0 20px 0 var(--color-toggle-light), 20px 0 0 var(--color-toggle-light),
+    -20px 0 0 var(--color-toggle-light), 15px 15px 0 var(--color-toggle-light),
+    -15px 15px 0 var(--color-toggle-light),
+    15px -15px 0 var(--color-toggle-light),
+    -15px -15px 0 var(--color-toggle-light);
   transform: scale(0);
   transition: all 0.3s ease;
 }

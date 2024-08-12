@@ -1,0 +1,44 @@
+.container {
+  display: flex;
+  gap: var(--space-m);
+  color: var(--text-color);
+  margin: var(--space-m) 0;
+}
+
+.timeline-wrapper {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+
+.timeline-circle {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  margin-bottom: var(--space-base);
+  background-color: var(--base-accent-color);
+}
+
+.timeline-line {
+  height: calc(100% - var(--circle-size));
+  width: 1px;
+  background-color: var(--base-accent-color);
+}
+
+.date {
+  font-size: var(--font-size-m);
+  margin: var(--space-s) 0;
+}
+
+.company-name {
+  font-size: var(--font-size-l);
+  margin: var(--space-s) 0;
+}
+
+.description {
+  margin: var(--space-s) 0;
+}
+
+.description div {
+  margin-bottom: var(--space-xs);
+}
