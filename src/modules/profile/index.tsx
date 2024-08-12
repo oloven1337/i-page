@@ -10,7 +10,11 @@ export const Profile = () => {
 
   return (
     <div className="flex flex-col items-center gap-4">
-      <img className="w-[120px] h-[120px] rounded-full" src={me} alt="" />
+      <img
+        className="w-[120px] h-[120px] rounded-full object-cover object-[50%_30%]"
+        src={me}
+        alt=""
+      />
       <div>
         <Text className="font-bold text-2xl" type="h3">
           {t("profile.name")}
