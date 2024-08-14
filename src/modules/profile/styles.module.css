@@ -1,3 +1,7 @@
 .post {
   color: var(--base-accent-color);
 }
+
+.year {
+  color: var(--base-accent-color);
+}

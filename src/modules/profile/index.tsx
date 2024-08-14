@@ -9,7 +9,7 @@ export const Profile = () => {
   const { t } = useTranslation();
 
   return (
-    <div className="flex flex-col items-center gap-4">
+    <div className="flex flex-col items-center gap-4 w-full">
       <img
         className="w-[120px] h-[120px] rounded-full object-cover object-[50%_30%]"
         src={me}
@@ -26,6 +26,11 @@ export const Profile = () => {
           {t("profile.post")}
         </Text>
       </div>
+      <Text type="h3" className="text-lg w-full text-end">
+        {t("profile.totalExperience")}
+        <span className={styles.year}>&nbsp;4&nbsp;</span>
+        <span className={styles.year}>{t("profile.years")}</span>
+      </Text>
     </div>
   );
 };
