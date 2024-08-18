@@ -5,3 +5,14 @@
 .year {
   color: var(--base-accent-color);
 }
+
+.list {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+}
+
+.item {
+  margin-right: var(--space-s);
+  color: var(--text-color);
+}

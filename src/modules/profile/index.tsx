@@ -1,9 +1,11 @@
 import { useTranslation } from "react-i18next";
+import classNames from "classnames";
 
-import me from "../../assets/images/me.jpg";
+import me from "../../assets/icons/me.jpg";
 import { Text } from "../../ui/text";
 import styles from "./styles.module.css";
-import classNames from "classnames";
+import github from "../../assets/icons/github.png";
+import telegram from "../../assets/icons/telegram.png";
 
 export const Profile = () => {
   const { t } = useTranslation();
@@ -26,11 +28,35 @@ export const Profile = () => {
           {t("profile.post")}
         </Text>
       </div>
-      <Text type="h3" className="text-lg w-full text-end">
-        {t("profile.totalExperience")}
-        <span className={styles.year}>&nbsp;4&nbsp;</span>
-        <span className={styles.year}>{t("profile.years")}</span>
-      </Text>
+      <div className="flex items-center gap-4 space-between">
+        <ul className={styles.list}>
+          <li className={styles.item}>
+            <a
+              className="flex items-center"
+              target="_blank"
+              href="https://github.com/oloven1337"
+            >
+              <Text type="p">GitHub</Text>
+              <img className="w-8 h-8 ml-3" src={github} alt="" />
+            </a>
+          </li>
+          <li className={styles.item}>
+            <a
+              className="flex items-center"
+              target="_blank"
+              href="https://t.me/ibraggim"
+            >
+              <Text type="p">Telegram</Text>
+              <img className="w-8 h-8 ml-3" src={telegram} alt="" />
+            </a>
+          </li>
+        </ul>
+        <Text type="h3" className="text-lg">
+          {t("profile.totalExperience")}
+          <span className={styles.year}>&nbsp;4&nbsp;</span>
+          <span className={styles.year}>{t("profile.years")}</span>
+        </Text>
+      </div>
     </div>
   );
 };
