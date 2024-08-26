@@ -51,12 +51,12 @@ export const Profile = () => {
             </a>
           </li>
         </ul>
-        <Text type="h3" className="text-lg">
-          {t("profile.totalExperience")}
-          <span className={styles.year}>&nbsp;4&nbsp;</span>
-          <span className={styles.year}>{t("profile.years")}</span>
-        </Text>
       </div>
+      <Text type="h3" className="text-lg">
+        {t("profile.totalExperience")}
+        <span className={styles.year}>&nbsp;4&nbsp;</span>
+        <span className={styles.year}>{t("profile.years")}</span>
+      </Text>
     </div>
   );
 };
